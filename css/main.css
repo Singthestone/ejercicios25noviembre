@@ -1,3 +1,30 @@
+@charset "UTF-8";
+/* ******************* */
+/* VARIABLES */
+/* MIXIN */
+@media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
+  #capaBloqueo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rba(0, 0, 0, 0.3);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  #capaBloqueo::before {
+    content: "PONGA EL MÓVIL EN VERTICAL";
+    color: #fff;
+  }
+}
+@media (max-device-width: 320px) and (orientation: portrait) {
+  .main__star {
+    width: 100px;
+    height: 100px;
+    align-self: flex-start;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -348,4 +375,86 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
+  #capaBloqueo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rba(0, 0, 0, 0.3);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  #capaBloqueo::before {
+    content: "PONGA EL MÓVIL EN VERTICAL";
+    color: #fff;
+  }
+}
+@media (max-device-width: 320px) and (orientation: portrait) {
+  .main {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .main__star {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
+  #capaBloqueo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rba(0, 0, 0, 0.3);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  #capaBloqueo::before {
+    content: "PONGA EL MÓVIL EN VERTICAL";
+    color: #fff;
+  }
+}
+@media (min-device-width: 768px) and (max-device-width: calc(768px + 100px)) and (orientation: portrait) {
+  .main {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .main__star {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
+  #capaBloqueo {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rba(0, 0, 0, 0.3);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+  }
+  #capaBloqueo::before {
+    content: "PONGA EL MÓVIL EN VERTICAL";
+    color: #fff;
+  }
+}
+@media (min-width: 1366px) {
+  .main {
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .main__star {
+    width: 100px;
+    height: 100px;
+  }
 }
