@@ -365,6 +365,10 @@ template {
   display: none;
 }
 
+body {
+  padding: 20px;
+}
+
 .main__star {
   width: 500px;
   height: 500px;
@@ -395,6 +399,7 @@ template {
 }
 @media (max-device-width: 320px) and (orientation: portrait) {
   .main {
+    width: 100vw;
     justify-content: center;
     align-items: flex-start;
   }
@@ -402,6 +407,10 @@ template {
   .main__star {
     width: 100px;
     height: 100px;
+  }
+
+  .main__logo {
+    font-size: 50px;
   }
 }
 @media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
@@ -430,6 +439,10 @@ template {
     width: 100px;
     height: 100px;
   }
+
+  .main__logo {
+    font-size: 50px;
+  }
 }
 @media (min-device-width: 320px) and (max-device-width: calc(320px + 100px)) and (orientation: landscape) {
   #capaBloqueo {
@@ -449,12 +462,16 @@ template {
 }
 @media (min-width: 1366px) {
   .main {
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: start;
+    align-items: baseline;
   }
 
   .main__star {
     width: 100px;
     height: 100px;
+  }
+
+  .main__logo {
+    font-size: 100px;
   }
 }
